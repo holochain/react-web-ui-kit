@@ -1,5 +1,5 @@
-import React from 'react';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import * as React from 'react'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
 const theme = createMuiTheme({
@@ -7,7 +7,7 @@ const theme = createMuiTheme({
     primary: {
       light: '#6600ff',
       main: '#9900ff',
-      dark: '#00ff99',
+      dark: '#00ff99'
     },
     secondary: {
       light: '#6ff9ff',
@@ -15,19 +15,18 @@ const theme = createMuiTheme({
       dark: '#0095a8'
     }
   }
-});
+})
 
-function withRoot(Component) {
-  function WithRoot(props) {
+function withRoot (Component: React.ComponentType) {
+  function WithRoot (props: any) {
     return (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Component {...props} />
       </MuiThemeProvider>
-    );
+    )
   }
-
-  return WithRoot;
+  return WithRoot
 }
 
-export default withRoot;
+export default withRoot
