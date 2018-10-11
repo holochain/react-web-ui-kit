@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+ 	"outDir": "../dna/",
+ 	"rootDir": ".",
+ 	"allowJs": true,
+    "target": "es5",
+    "lib" : ["es5", "es6"],
+    "types": ["holochain-proto-types"],
+    "newLine" : "lf"
+  },
+  "exclude" : [
+  	"node_modules"
+  ]
+}
