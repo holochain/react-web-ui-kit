@@ -25,7 +25,6 @@
     "coverage": "react-scripts-ts test --env=jsdom --coverage --collectCoverageFrom=!src/**/*.d.ts --collectCoverageFrom=!src/**/*.stories.tsx --collectCoverageFrom=!src/**/data/*.ts --collectCoverageFrom=src/**/*.ts --collectCoverageFrom=src/**/*.tsx",
     "release:files": "node copy-release.js",
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "storybook:deploy": "storybook-to-ghpages",
     "tslint": "tslint --project ./tsconfig.json",
     "tslint:fix": "tslint --project ./tsconfig.json --fix"
   },

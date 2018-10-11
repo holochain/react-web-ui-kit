@@ -6,7 +6,7 @@ import { specs } from 'storybook-addon-specifications'
 import ExampleComponent from './exampleComponent'
 import { autoCompleteProfileFieldTests } from './exampleComponent.test'
 
-storiesOf('HoloVault/Profile', module)
+storiesOf('ExampleComponent', module)
   .add('Autocomplete Profile Field', () => {
     specs(() => autoCompleteProfileFieldTests)
     return (<ExampleComponent ownStatus='ready'/>)
